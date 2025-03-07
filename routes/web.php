@@ -13,6 +13,8 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('spreadsheet', 'App\Http\Controllers\SpreadsheetController@index');
+
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
